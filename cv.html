@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="This is the cv of Parsa Lotfi">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 42cm;
+            height: 30cm;
+
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "page1"
+                "page2";
+
+        }
+
+        .page1 {
+            margin: 0 auto;
+            width: 21cm;
+            height: 30cm;
+            grid-area: "page1";
+            background-color: green;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 7fr 0.01fr;
+            grid-template-areas: "pagetitle"
+                "pagebody"
+                "page1footer";
+        }
+
+
+        .page2 {
+            margin: 0 auto;
+            width: 21cm;
+            height: 30cm;
+            grid-area: "page2";
+            background-color: purple;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 7fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 0.01fr;
+            grid-template-areas: "blank200"
+                "computerskills_title"
+                "computerskills_data"
+                "blank201"
+                "interest_title"
+                "interest_data"
+                "blank202"
+                "hobbies_title"
+                "hobbies_data"
+                "blank203"
+                "references_title"
+                "references_data"
+                "blank204"
+                "page2footer";           
+        }
+
+        .computerskills_data {
+            grid-area: computerskills_data;
+            display: grid;
+            grid-template-columns: 1.1fr 2.3fr 0.4fr 2.7fr 0.6fr 3.3fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "blank66 plang blank67 csharp blank68 matlab"
+                "blank69 blank69 blank69 python blank72 blank72"
+                "blank74 blank74 blank74 blank74 blank74 blank74"
+                "blank80 marklang blank81 html blank82 css"
+                "blank83 blank83 blank83 blank83 blank83 blank83"
+                "blank89 opesys blank90 linux blank91 windows"
+                "blank92 blank92 blank92 blank92 blank92 blank92"
+                "blank93 databases blank94 sql blank95 sqlite"
+                "blank96 blank96 blank96 blank96 blank96 blank96"
+                "blank97 frameworks blank98 asp blank99 maui"
+                "blank100 blank100 blank100 mbf blank101 blank101"
+                "blank102 blank102 blank102 blank102 blank102 blank102"
+                "blank103 webservers blank104 nginx blank105 blank105"
+                "blank106 blank106 blank106 blank106 blank106 blank106"
+                "blank107 virtualization blank108 docker blank109 hyperv"
+                "blank110 blank110 blank110 vmware blank111 blank111"
+                "blank112 blank112 blank112 blank112 blank112 blank112"
+                "blank113 others blank114 git blank115 coin"
+                "blankh3 blankh3 blankh3 blankh3 blankh3 blankh3 ";
+        }
+
+        .blank74 {
+            grid-area: blank74;
+        }
+
+        .blank83 {
+            grid-area: blank83;
+        }
+
+        .blank69 {
+            grid-area: blank69;
+        }
+
+        .blank72 {
+            grid-area: blank72;
+        }
+
+        .blank92 {
+            grid-area: blank92;
+        }
+
+        .blank96 {
+            grid-area: blank96;
+        }
+
+        .blank100 {
+            grid-area: blank100;
+        }
+
+        .blank101 {
+            grid-area: blank101;
+        }
+
+        .blank102 {
+            grid-area: blank102;
+        }
+
+        .blank105 {
+            grid-area: blank105;
+        }
+
+        .blank106 {
+            grid-area: blank106;
+        }
+
+        .blank110 {
+            grid-area: blank110;
+        }
+
+        .blank111 {
+            grid-area: blank111;
+        }
+
+        .blank112 {
+            grid-area: blank112;
+        }
+
+        .blank115 {
+            grid-area: blank115;
+        }
+
+        .blankh3 {
+            grid-area: blankh3;
+        }
+
+        .interest_data {
+            grid-area: interest_data;
+            display: grid;
+            grid-template-columns: 0.35fr 0.33fr 0.05fr 0.7fr 0.3fr 0.3fr 0.05fr 1.4fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "blankv1 blank116 blankv2 academic1 blankv3 blank118 blankv4 practical1"
+                "blankv1 academic blankv2 academic2 blankv3 practical blankv4  practical2"
+                "blankv1 blank120 blankv2 academic3 blankv3 blank122 blankv4 practical3"
+                "blankv1 blank123 blankv2 academic4 blankv3 blank125 blankv4 practical4"
+                "blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 ";
+        }
+
+        .hobbies_data {
+            grid-area: hobbies_data;
+            display: grid;
+            grid-template-columns: 0.43fr 0.23fr 0.05fr 0.7fr 0.38fr 0.23fr 0.05fr 1.4fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "blankv5 blank126 blankv6 active1 blankv7 blank127 blankv8 passive1"
+                "blankv5 active blankv6 active2 blankv7 passive blankv8  passive2"
+                "blankv5 blank128 blankv6 active3 blankv7 blank129 blankv8 passive3"
+                "blankv5 blank130 blankv6 active4 blankv7 blank131 blankv8 passive4"
+                "blankh2 blankh2 blankh2 blankh2 blankh2 blankh2 blankh2 blankh2";
+        }
+
+        .blankv1 {
+            grid-area: blankv1;
+        }
+
+        .blankv2 {
+            grid-area: blankv2;
+        }
+
+        .blankv3 {
+            grid-area: blankv3;
+        }
+
+        .blankv4 {
+            grid-area: blankv4;
+        }
+
+        .blankv5 {
+            grid-area: blankv5;
+        }
+
+        .blankv6 {
+            grid-area: blankv6;
+        }
+
+        .blankv7 {
+            grid-area: blankv7;
+        }
+
+        .blankv8 {
+            grid-area: blankv8;
+        }
+
+        .blankh1 {
+            grid-area: blankh1;
+        }
+
+        .blankh2 {
+            grid-area: blankh2;
+        }
+
+        .references_data {
+            grid-area: references_data;
+            display: grid;
+            grid-template-columns: 1fr 1.7fr 0.25fr 4.3fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "blankv9 salehname salehimg1 salehemail1"
+                "blankv9 blank132 salehimg2 salehemail2"
+                "blankv9 blank133 salehimg3 salehlink"
+                "blankv9 blankh4 blankh4 blankh4"
+                "blankv9 abbas abbasimg1 abbasemail"
+                "blankv9 blank134 abbasimg2 abbaslink"
+                "blankh5 blankh5 blankh5 blankh5";
+        }
+        .blankv9{
+            grid-area: blankv9;
+        }
+        .blankh4{
+            grid-area: blankh4;
+        }
+
+
+        @media print {
+            a {
+                /* pointer-events: none; */
+                color: #000;
+                text-decoration: none;
+            }
+
+            .pagebreak {
+                clear: both;
+                page-break-after: always;
+            }
+        }
+
+        .pagetitle {
+            grid-area: "pagetitle";
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 4fr 1fr 6fr 1fr 1fr 6fr;
+            grid-template-areas: "profilepic""blank1""cvname""blank2""logo""contact";
+        }
+
+
+        .profilepic {
+            grid-area: "profilepic";
+            /* background-color: orange; */
+        }
+
+        .blank1 {
+            grid-area: "blank1";
+            /* background-color: rosybrown; */
+        }
+
+        .cvname {
+            grid-area: "cvname";
+            /* background-color: seagreen; */
+        }
+
+        .blank2 {
+            grid-area: "blank2";
+            /* background-color: rosybrown; */
+        }
+
+        .logo {
+            display: grid;
+            grid-area: "logo";
+            /* background-color: violet; */
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: "email_logo"
+                "linkedin_logo"
+                "phone_logo"
+                "github_logo";
+        }
+
+        .contact {
+            grid-area: "contact";
+            display: grid;
+            /* background-color: turquoise; */
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: "email"
+                "linkedin"
+                "phone"
+                "github";
+
+        }
+
+        .pagebody {
+            grid-area: "pagebody";
+            display: grid;
+            /* background-color: white; */
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 3fr .5fr 1fr 5fr .5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr;
+            grid-template-areas: "blank3"
+                "personal_title"
+                "personal_data"
+                "blank10"
+                "education_title"
+                "education_data"
+                "blank28"
+                "teaching_title"
+                "teaching_data"
+                "blank40"
+                "working_title"
+                "working_data"
+                "blank52"
+                "languages_title"
+                "languages_data"
+                "blank65"
+
+        }
+
+
+        .blank3 {
+            grid-area: "blank3";
+            /* background-color: greenyellow; */
+        }
+
+        .personal_title {
+            grid-area: "personal_title";
+            /* background-color: hotpink; */
+
+        }
+
+        .personal_data {
+            grid-area: "personal_data";
+            display: grid;
+            /* background-color: lightblue; */
+            grid-template-rows: 1fr 1fr 1.5fr;
+            grid-template-columns: 1fr 1.6fr 2.2fr 1.4fr 1.5fr 2.2fr;
+            grid-template-areas: "blank4""dob""dob_v""blank5""ms""ms_v"
+                "blank7""pob""pob_v""blank8""ws""ws_v"
+                "b""address""address_v""bb""pc""pc_v";
+        }
+
+        .blank10 {
+            grid-area: "blank10";
+            /* background-color: tomato; */
+        }
+
+        .education_title {
+            grid-area: "education_title";
+            /* background-color: violet; */
+        }
+
+        .education_data {
+            grid-area: "education_data";
+            /* background-color: brown; */
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr 1fr 3fr;
+            grid-template-areas: "y1521sec"
+                "blank19"
+                "y1315sec";
+        }
+
+        .y1521sec {
+            grid-area: "y1521sec";
+            display: grid;
+            grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "blank11""y1521""blank12""y1521d""y1521d_v"
+                "blank13""blank14""blank15""y1521w""y1521w_v"
+                "blank16""blank17""blank18""y1521gpa""y1521gpa_v";
+        }
+
+        .blank19 {
+            grid-area: "blank19";
+            /* background-color: darkorange; */
+        }
+
+        .y1315sec {
+            grid-area: "y1315sec";
+            display: grid;
+            grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "blank20""y1315""blank21""y1315d""y1315d_v"
+                "blank22""blank23""blank24""y1315w""y1315w_v"
+                "blank25""blank26""blank27""y1315gpa""y1315gpa_v";
+        }
+
+
+        .blank4 {
+            grid-area: "blank4";
+            /* background-color: mediumorchid; */
+        }
+
+        .dob {
+            grid-area: "dob";
+        }
+
+        .dob_v {
+            grid-area: "dob_v";
+        }
+
+        .blank5 {
+            grid-area: "blank5";
+            /* background-color: mediumorchid; */
+        }
+
+        .ms {
+            grid-area: "ms";
+        }
+
+        .ms_v {
+            grid-area: "ms_v";
+        }
+
+        .blank6 {
+            grid-area: "blank6";
+            /* background-color: mediumorchid; */
+        }
+
+
+
+        .blank7 {
+            grid-area: "blank7";
+            /* background-color: mediumpurple; */
+        }
+
+        .pob {
+            grid-area: "pob";
+        }
+
+        .pob_v {
+            grid-area: "pob_v";
+        }
+
+        .blank8 {
+            grid-area: "blank8";
+            /* background-color: mediumpurple; */
+        }
+
+        .ws {
+            grid-area: "ws";
+        }
+
+        .ws_v {
+            grid-area: "ws_v";
+        }
+
+        .blank9 {
+            grid-area: "blank9";
+            /* background-color: mediumpurple; */
+        }
+
+        .teaching_title {
+            grid-area: "teaching_title";
+            /* background-color: grey; */
+        }
+
+        .teaching_data {
+            grid-area: "teaching";
+            display: grid;
+            /* background-color: midnightblue; */
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+            grid-template-areas: "blank29""y1920""blank30""y1929p""y1920p_v"
+                "blank31""blank32""blank33""y1920w""y1920w_v"
+                "blank34""blank35""blank36""y1920i""y1920i_v"
+                "blank37""blank38""blank39""y1929c""y1929c_v";
+        }
+
+
+        .working_title {
+            grid-area: "working_title";
+            /* background-color: mediumblue; */
+        }
+
+        .working_data {
+            grid-area: "working_data";
+            /* background-color: cyan; */
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+            grid-template-areas: "blank41""y1617""blank42""y1617p""y1617p_v"
+                "blank43""blank44""blank45""y1617w""y1617w_v"
+                "blank46""blank47""blank48""y1617cto""y1617cto_v"
+                "blank49""blank50""blank51""y1617c""y1617c_v";
+        }
+
+
+        .languages_title {
+            grid-area: "languages_title";
+            /* background-color: darkorange; */
+        }
+
+        .languages_data {
+            grid-area: "languages_data";
+            /* background-color: purple; */
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+            grid-template-areas: "blank53""blank54""blank55""en""en_v"
+                "blank56""blank57""blank58""de""de_v"
+                "blank59""blank60""blank61""de2""de2_v"
+                "blank62""blank63""blank64""fa""fa_v";
+        }
+
+        /* .restofpage {
+            grid-area: "restofpage";
+            background-color: red;
+        } */
+
+        /* .footer {            
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page1">
+        <div class="pagetitle">
+            <div class="profilepic">
+                <img src="profilepic.jpg" width="100%" height="100%" style="border-radius: 50%;">
+            </div>
+            <div class="blank1"></div>
+            <div class="cvname">
+                <center>
+                    <br>
+                    <i>Curriculum Vitae</i>
+                    <br><br>
+                    <span style="font-size: 49px; font-family: Cambria, Cochin, Georgia,
+                         Times, 'Times New Roman', serif;">Parsa
+                        Lotfi</span>
+                </center>
+
+            </div>
+            <div class="blank2"></div>
+            <div class="logo">
+                <div class="email_logo">
+                    <i style="font-size:25px" class="fa">&#xf0e0;</i>
+                </div>
+                <div class="linkedin_logo">
+                    <i style="font-size:28px" class="fa">&#xf08c;</i>
+                </div>
+                <div class="phone_logo">
+                    <i style="font-size:28px" class="fa">&#xf095;</i>
+                </div>
+                <div class="github_logo">
+                    <i style="font-size:29px" class="fa">&#xf09b;</i>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="email" style="font-size: 18px;">
+                    parsalotfy@gmail.com
+                </div>
+                <div class="linkedin" style="font-size: 18px;">
+                    <a href="https://www.linkedin.com/in/parsalotfy">
+                        linkedin.com/in/parsalotfy
+                    </a>
+                </div>
+                <div class="phone" style="font-size: 18px;">+989308386256</div>
+                <div class="github" style="font-size: 18px;">
+                    <a href="https://www.github.com/parsalotfy">
+                        github.com/parsalotfy
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pagebody">
+            <div class="blank3">
+                <hr>
+            </div>
+            <div class="personal_title">
+                <span style="font-size: 20px; font-weight: bold;">Personal Information</span>
+            </div>
+            <div class="personal_data">
+                <div class="blank4"></div>
+                <div class="dob" style="font-size: 14px; font-weight: bold;">Date of Birth:</div>
+                <div class="dob_v" style="font-size: 14px;">20 December 1996</div>
+                <div class="blank5"></div>
+                <div class="ms" style="font-size: 14px; font-weight: bold;">Marital Status:</div>
+                <div class="ms_v" style="font-size: 14px;">Single</div>
+
+
+                <div class="blank7"></div>
+                <div class="pob" style="font-size: 14px; font-weight: bold;">Place of Birth:</div>
+                <div class="pob_v" style="font-size: 14px;">Tehran</div>
+                <div class="blank8"></div>
+                <div class="ws" style="font-size: 14px; font-weight: bold;">Website:</div>
+                <div class="ws_v" style="font-size: 14px;"><a href="https://wwww.parsalotfy.ir">parsalotfy.ir</a></div>
+
+                <div class="b"></div>
+                <div class="address" style="font-size: 14px; font-weight: bold;">Address: </div>
+                <div class="address_v" style="font-size: 13px;">Unit5, Num 51, 36th street, Gisha, Tehran, Iran</div>
+                <div class="bb"></div>
+                <div class="pc" style="font-size: 14px; font-weight: bold;">Postal Code: </div>
+                <div class="pc_v" style="font-size: 14px;">1448984586</div>
+
+            </div>
+            <div class="blank10">
+                <hr>
+            </div>
+            <div class="education_title">
+                <span style="font-size: 20px; font-weight: bold;">Education</span>
+            </div>
+            <div class="education_data">
+                <div class="y1521sec">
+                    <div class="blank11"></div>
+                    <div class="y1521">
+                        <i style="font-size: 14px;">2015 - 2021</i>
+                    </div>
+                    <div class="blank12"></div>
+                    <div class="y1521d">
+                        <span style="font-size: 14px; font-weight: bold;">Degree:</span>
+                    </div>
+                    <div class="y1521d_v">
+                        <span style="font-size: 14px;">Bachelor of Science in Software Engineering</span>
+                    </div>
+                    <div class="blank13"></div>
+                    <div class="blank14"></div>
+                    <div class="blank15"></div>
+                    <div class="y1521w">
+                        <span style="font-size: 14px; font-weight: bold;">Where:</span>
+                    </div>
+                    <div class="y1521w_v">
+                        <span style="font-size: 14px;">Islamic Azad University Tehran North Branch (IAUTNB)</span>
+                    </div>
+                    <div class="blank16"></div>
+                    <div class="blank17"></div>
+                    <div class="blank18"></div>
+                    <div class="y1521gpa">
+                        <span style="font-size: 14px; font-weight: bold;">GPA:</span>
+                    </div>
+                    <div class="y1521gpa_v">
+                        <span style="font-size: 14px;">2.4 (in German grading system)</span>
+                    </div>
+
+                </div>
+
+                <div class="blank19"></div>
+
+                <div class="y1315sec">
+                    <div class="blank20"></div>
+                    <div class="y1315">
+                        <i style="font-size: 14px;">2013 - 2015</i>
+                    </div>
+                    <div class="blank21"></div>
+                    <div class="y1315d">
+                        <span style="font-size: 14px; font-weight: bold;">Degree:</span>
+                    </div>
+                    <div class="y1315d_v">
+                        <span style="font-size: 14px;">Highschool Diploma in Mathematics and Physics Discipline</span>
+                    </div>
+                    <div class="blank22"></div>
+                    <div class="blank23"></div>
+                    <div class="blank24"></div>
+                    <div class="y1315w">
+                        <span style="font-size: 14px; font-weight: bold;">Where:</span>
+                    </div>
+                    <div class="y1315w_v">
+                        <span style="font-size: 14px;">Shariati Highschool</span>
+                    </div>
+                    <div class="blank25"></div>
+                    <div class="blank26"></div>
+                    <div class="blank27"></div>
+                    <div class="y1315gpa">
+                        <span style="font-size: 14px; font-weight: bold;">GPA:</span>
+                    </div>
+                    <div class="y1315gpa_v">
+                        <span style="font-size: 14px;">2.0 (in German grading system)</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blank28">
+                <hr>
+            </div>
+            <div class="teaching_title">
+                <span style="font-size: 20px; font-weight: bold;">Teaching Experience</span>
+            </div>
+            <div class="teaching_data">
+                <div class="blank29"></div>
+                <div class="y1920">
+                    <i style="font-size: 14px;">2019 - 2020</i>
+                </div>
+                <div class="blank30"></div>
+                <div class="y1920p">
+                    <span style="font-size: 14px; font-weight: bold;">Position:</span>
+                </div>
+                <div class="y1920p_v">
+                    <span style="font-size: 14px;">Teaching Assistant for Training Sessions</span>
+                </div>
+                <div class="blank31"></div>
+                <div class="blank32">
+                    <i style="font-size: 12px;">(Two Semesters)</i>
+                </div>
+                <div class="blank33"></div>
+                <div class="y1920w">
+                    <span style="font-size: 14px; font-weight: bold;">Where:</span>
+                </div>
+                <div class="y1920w_v">
+                    <span style="font-size: 14px;">Islamic Azad University Tehran North Branch (IAUTNB)</span>
+                </div>
+                <div class="blank34"></div>
+                <div class="blank35"></div>
+                <div class="blank36"></div>
+                <div class="y1920i">
+                    <span style="font-size: 14px; font-weight: bold;">Instructor:</span>
+                </div>
+                <div class="y1920i_v">
+                    <span style="font-size: 14px;"><a
+                            href="https://www.linkedin.com/in/saleh-hafez-qorani-ba5a851b1/">Dr. Saleh Hafez
+                            Qorani</a></span>
+                </div>
+                <div class="blank37"></div>
+                <div class="blank38"></div>
+                <div class="blank39"></div>
+                <div class="y1920c">
+                    <span style="font-size: 14px; font-weight: bold;">Course:</span>
+                </div>
+                <div class="y1920c_v">
+                    <span style="font-size: 14px;"><a href="http://infolab.stanford.edu/~ullman/ialc.html">Automata
+                            Theory,Languages, and Computation</a></span>
+                </div>
+            </div>
+
+            <div class="blank40">
+                <hr>
+            </div>
+
+            <div class="working_title">
+                <span style="font-size: 20px; font-weight: bold;">Working Experience</span>
+            </div>
+            <div class="working_data">
+                <div class="blank41"></div>
+                <div class="y1617">
+                    <i style="font-size: 14px;">2016 - 2017</i>
+                </div>
+                <div class="blank42"></div>
+                <div class="y1617p">
+                    <span style="font-size: 14px; font-weight: bold;">Position:</span>
+                </div>
+                <div class="y1617p_v">
+                    <span style="font-size: 14px;">Backend Developer</span>
+                </div>
+                <div class="blank43"></div>
+                <div class="blank44"></div>
+                <div class="blank45"></div>
+                <div class="y1617w">
+                    <span style="font-size: 14px; font-weight: bold;">Where:</span>
+                </div>
+                <div class="y1617w_v">
+                    <span style="font-size: 14px;">Rayan-Tose-e-Borna</span>
+                </div>
+                <div class="blank46"></div>
+                <div class="blank47"></div>
+                <div class="blank48"></div>
+                <div class="y1617cto">
+                    <span style="font-size: 14px; font-weight: bold;">CTO:</span>
+                </div>
+                <div class="y1617cto_v">
+                    <span style="font-size: 14px;"><a href="https://www.linkedin.com/in/abbas-yahyaee/">Abbas
+                            Yahyaee</a></span>
+                </div>
+                <div class="blank49"></div>
+                <div class="blank50"></div>
+                <div class="blank51"></div>
+                <div class="y1617c">
+                    <span style="font-size: 14px; font-weight: bold;">Field:</span>
+                </div>
+                <div class="y1617c_v">
+                    <span style="font-size: 14px;">C# programming, Database programming using SQL-Server</span>
+                </div>
+            </div>
+
+            <div class="blank52">
+                <hr>
+            </div>
+
+            <div class="languages_title">
+                <span style="font-size: 20px; font-weight: bold;">Language Proficiency</span>
+            </div>
+
+            <div class="languages_data">
+                <div class="blank53"></div>
+                <div class="blank54"></div>
+                <div class="blank55"></div>
+                <div class="en">
+                    <span style="font-size: 14px; font-weight: bold;">English:</span>
+                </div>
+                <div class="en_v">
+                    <span style="font-size: 14px;">IELTS Academic Score: 6.5</span>
+                </div>
+                <div class="blank56"></div>
+                <div class="blank57"></div>
+                <div class="blank58"></div>
+                <div class="de">
+                    <span style="font-size: 14px; font-weight: bold;">German:</span>
+                </div>
+                <div class="de_v">
+                    <span style="font-size: 14px;">ÖSD Certificate B1 (Lesen,Hören,Schreiben)</span>
+                </div>
+                <div class="blank59"></div>
+                <div class="blank60"></div>
+                <div class="blank61"></div>
+                <div class="de2">
+
+                </div>
+                <div class="de2">
+                    <span style="font-size: 14px;">600 hours of German language course at Austria Embassy(ÖKF)</span>
+                </div>
+                <div class="blank62"></div>
+                <div class="blank63"></div>
+                <div class="blank64"></div>
+                <div class="fa">
+                    <span style="font-size: 14px; font-weight: bold;">Persian:</span>
+                </div>
+                <div class="fa_v">
+                    <span style="font-size: 14px;">Native</span>
+                </div>
+            </div>
+
+            <div class="blank65">
+                <hr>
+            </div>
+
+            <div class="page1footer"><center>Page 1 of 2</center></div>
+
+        </div>
+    </div>
+
+    <!-- <div class="footer">
+        Page 1 of 2
+    </div> -->
+
+
+    <div class="pagebreak"></div>
+
+
+
+    <div class="page2">
+        <div class="blank200"><hr></div>
+
+        <div class="computerskills_title">
+            <span style="font-size: 20px; font-weight: bold;">Computer Skills</span>
+        </div>
+
+
+        <div class="computerskills_data" style=" font-size: 14px;">
+
+            <div class="blank66"></div>
+            <div class="plang" style="font-weight: bold;">Programming Languages:</div>
+            <div class="blank67"></div>
+            <div class="csharp">♦ C#(proficient)</div>
+            <div class="blank68"></div>
+            <div class="matlab">♦ Matlab(familiar)</div>
+            <div class="blank69"></div>
+            <div class="python">♦ Python(familiar)</div>
+            <div class="blank72"></div>
+
+            <div class="blank74"></div>
+
+            <div class="blank80"></div>
+            <div class="marklang" style="font-weight: bold;">Markup Languages:</div>
+            <div class="blank81"></div>
+            <div class="html">♦ HTML</div>
+            <div class="blank82"></div>
+            <div class="css">♦ CSS</div>
+
+            <div class="blank83"></div>
+
+            <div class="blank89"></div>
+            <div class="opesys" style="font-weight: bold;">Operating Systems:</div>
+            <div class="blank90"></div>
+            <div class="linux">♦ Linux(LPIC 1)</div>
+            <div class="blank91"></div>
+            <div class="windows">♦ Windows</div>
+
+            <div class="blank92"></div>
+
+            <div class="blank93"></div>
+            <div class="databases" style="font-weight: bold;">Databases:</div>
+            <div class="blank94"></div>
+            <div class="sql">♦ MS SQL-Server(proficient)</div>
+            <div class="blank95"></div>
+            <div class="sqlite">♦ SQLite(familiar)</div>
+
+            <div class="blank96"></div>
+
+            <div class="blank97"></div>
+            <div class="frameworks" style="font-weight: bold;">Frameworks:</div>
+            <div class="blank98"></div>
+            <div class="asp">♦ Asp.Net</div>
+            <div class="blank99"></div>
+            <div class="maui">♦ MAUI</div>
+            <div class="blank100"></div>
+            <div class="mbf">♦ Microsoft Bot Framework</div>
+            <div class="blank101"></div>
+
+            <div class="blank102"></div>
+
+            <div class="blank103"></div>
+            <div class="webservers" style="font-weight: bold;">Web Servers:</div>
+            <div class="blank104"></div>
+            <div class="nginx">♦ Nginx</div>
+            <div class="blank105"></div>
+
+            <div class="blank106"></div>
+
+            <div class="blank107"></div>
+            <div class="virtualization" style="font-weight: bold;">Virtualization:</div>
+            <div class="blank108"></div>
+            <div class="docker">♦ Docker(proficient)</div>
+            <div class="blank109"></div>
+            <div class="hyperv">♦ Hyper-v(familiar)</div>
+            <div class="blank110"></div>
+            <div class="vmware">♦ Vmware(familiar)</div>
+            <div class="blank111"></div>
+
+            <div class="blank112"></div>
+
+            <div class="blank113"></div>
+            <div class="others" style="font-weight: bold;">Others:</div>
+            <div class="blank114"></div>
+            <div class="git">♦ Git, Github</div>
+            <div class="blank115"></div>
+            <div class="coin">♦ Cryptocurrencies</div>
+            <div class="blankh3"></div>
+        </div>
+
+
+
+        <div class="blank201">
+            <hr>
+        </div>
+
+        <div class="interest_title">
+            <span style="font-size: 20px; font-weight: bold;">Fields of Interest </span>
+            <span style="font-size: 14px; ">(Including, but not limited to)</span>
+        </div>
+
+        <div class="interest_data" style="font-size: 14px;">
+            <div class="blankv1"></div>
+            <div class="blank116"></div>
+            <div class="blankv2" style="border-left: solid 1px;"></div>
+            <div class="academic1">♦ Graph Theory</div>
+            <div class="blankv3"></div>
+            <div class="blank118"></div>
+            <div class="blankv4" style="border-left: solid 1px;"></div>
+            <div class="practical1">♦ Machine Learning</div>
+            <div class="academic" style="font-weight: bold;">Academic:</div>
+            <div class="academic2">♦ Automata Theroy</div>
+            <div class="practical" style="font-weight: bold;">Practical:</div>
+            <div class="practical2">♦ Progressive WebApplication Development</div>
+            <div class="blank120"></div>
+            <div class="academic3">♦ Languages</div>
+            <div class="blank122"></div>
+            <div class="practical3">♦ Mobile Application Development</div>
+            <div class="blank123"></div>
+            <div class="academic4">♦ Compilers</div>
+            <div class="blank125"></div>
+            <div class="practical4">♦ Web API Development</div>
+            <div class="blankh1"></div>
+
+        </div>
+
+        <div class="blank202">
+            <hr>
+        </div>
+
+        <div class="hobbies_title" style="font-size: 20px; font-weight: bold;">Hobbies
+        </div>
+
+        <div class="hobbies_data" style="font-size: 14px;">
+            <div class="blankv5"></div>
+            <div class="blank126"></div>
+            <div class="blankv6" style="border-left: solid 1px;"></div>
+            <div class="active1">♦ Swimming</div>
+            <div class="blankv7"></div>
+            <div class="blank127"></div>
+            <div class="blankv8" style="border-left: solid 1px;"></div>
+            <div class="passive1">♦ Watching videos about solar panels</div>
+            <div class="active" style="font-weight: bold;">Active:</div>
+            <div class="active2">♦ Playing Tennis</div>
+            <div class="passive" style="font-weight: bold;">Passive:</div>
+            <div class="passive2">♦ Watching videos about electric vehicles</div>
+            <div class="blank128"></div>
+            <div class="active3">♦ Cooking</div>
+            <div class="blank129"></div>
+            <div class="passive3">♦ Watching tutorials</div>
+            <div class="blank130"></div>
+            <div class="active4">♦ Camping</div>
+            <div class="blank131"></div>
+            <div class="passive4">♦ Playing video games with friends</div>
+            <div class="blankh2"></div>
+
+        </div>
+
+        <div class="blank203">
+            <hr>
+        </div>
+
+        <div class="references_title" style="font-size: 20px; font-weight: bold;">References</div>
+
+        <div class="references_data" style="font-size: 14px;">
+            <div class="blankv9"></div>
+            <div class="salehname" style="font-weight: bold;">Dr. Saleh Hafez Qorani</div>
+            <div class="salehimg1">
+                <i style="font-size:18px" class="fa">&#xf0e0;</i>
+            </div>
+            <div class="salehmail1">saleh.hafezqorani@gmail.com</div>
+            <div class="blank132"></div>
+            <div class="salehimg2">
+                <i style="font-size:18px" class="fa">&#xf0e0;</i>
+            </div>
+            <div class="salehmail2">s_hafez_ghorani@iau-tnb.ac.ir</div>
+            <div class="blank133"></div>
+            <div class="salehimg3">
+                <i style="font-size:19px" class="fa">&#xf08c;</i>
+            </div>
+            <div class="salehlink"><a href="https://www.linkedin.com/in/saleh-hafez-qorani-ba5a851b1/">linkedin.com/in/saleh-hafez-qorani-ba5a851b1</a></div>
+            <div class="blankh4"></div>
+            <div class="abbas" style="font-weight: bold;">Abbas Yahyaee</div>
+            <div class="abbasimg1">
+                <i style="font-size:18px" class="fa">&#xf0e0;</i>
+            </div>
+            <div class="abbasemail">yahyaee@gmail.com</div>
+            <div class="blank134"></div>
+            <div class="abbasimg2">
+                <i style="font-size:19px" class="fa">&#xf08c;</i>
+            </div>
+            <div class="abbaslink"><a href="https://www.linkedin.com/in/abbas-yahyaee/">linkedin.com/in/abbas-yahyaee</a></div>
+            <div class="blankh5"></div>
+        </div>
+
+        <div class="blank204"><hr></div>
+
+        <div class="page2footer"><center>Page 2 of 2</center></div>
+
+<!-- 
+        "blankv9 salehname salehimg1 salehemail1"
+        "blankv9 blank132 salehimg2 salehemail2"
+        "blankv9 blank133 salehimg3 salehlink"
+        "blankv9 blankh4 blankh4 blankh4"
+        "blankv9 abbas abbasimg1 abbasemail"
+        "blankv9 blank134 abbasimg2 abbaslink"; -->
+
+    </div>
+
+</body>
+
+</html>
