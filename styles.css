@@ -1,0 +1,560 @@
+body {
+    /*background-color: gray;*/
+}
+
+.container {
+    margin: 0 auto;
+    width: 42cm;
+    height: 30cm;
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "page1"
+        "page2";
+
+}
+
+.page1 {
+    margin: 0 auto;
+    width: 21cm;
+    height: 30cm;
+    grid-area: "page1";
+    /*background-color: green;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 0.01fr;
+    grid-template-areas: "pagetitle"
+        "pagebody"
+        "page1footer";
+}
+
+
+.page2 {
+    margin: 0 auto;
+    width: 21cm;
+    height: 30cm;
+    grid-area: "page2";
+    /*background-color: purple;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 7fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 0.01fr;
+    grid-template-areas: "blank200"
+        "computerskills_title"
+        "computerskills_data"
+        "blank201"
+        "interest_title"
+        "interest_data"
+        "blank202"
+        "hobbies_title"
+        "hobbies_data"
+        "blank203"
+        "references_title"
+        "references_data"
+        "blank204"
+        "page2footer";           
+}
+
+.computerskills_data {
+    grid-area: computerskills_data;
+    display: grid;
+    grid-template-columns: 1.1fr 2.3fr 0.4fr 2.7fr 0.6fr 3.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "blank66 plang blank67 csharp blank68 matlab"
+        "blank69 blank69 blank69 python blank72 blank72"
+        "blank74 blank74 blank74 blank74 blank74 blank74"
+        "blank80 marklang blank81 html blank82 css"
+        "blank83 blank83 blank83 blank83 blank83 blank83"
+        "blank89 opesys blank90 linux blank91 windows"
+        "blank92 blank92 blank92 blank92 blank92 blank92"
+        "blank93 databases blank94 sql blank95 sqlite"
+        "blank96 blank96 blank96 blank96 blank96 blank96"
+        "blank97 frameworks blank98 asp blank99 maui"
+        "blank100 blank100 blank100 mbf blank101 blank101"
+        "blank102 blank102 blank102 blank102 blank102 blank102"
+        "blank103 webservers blank104 nginx blank105 blank105"
+        "blank106 blank106 blank106 blank106 blank106 blank106"
+        "blank107 virtualization blank108 docker blank109 hyperv"
+        "blank110 blank110 blank110 vmware blank111 blank111"
+        "blank112 blank112 blank112 blank112 blank112 blank112"
+        "blank113 others blank114 git blank115 coin"
+        "blankh3 blankh3 blankh3 blankh3 blankh3 blankh3 ";
+}
+
+.blank74 {
+    grid-area: blank74;
+}
+
+.blank83 {
+    grid-area: blank83;
+}
+
+.blank69 {
+    grid-area: blank69;
+}
+
+.blank72 {
+    grid-area: blank72;
+}
+
+.blank92 {
+    grid-area: blank92;
+}
+
+.blank96 {
+    grid-area: blank96;
+}
+
+.blank100 {
+    grid-area: blank100;
+}
+
+.blank101 {
+    grid-area: blank101;
+}
+
+.blank102 {
+    grid-area: blank102;
+}
+
+.blank105 {
+    grid-area: blank105;
+}
+
+.blank106 {
+    grid-area: blank106;
+}
+
+.blank110 {
+    grid-area: blank110;
+}
+
+.blank111 {
+    grid-area: blank111;
+}
+
+.blank112 {
+    grid-area: blank112;
+}
+
+.blank115 {
+    grid-area: blank115;
+}
+
+.blankh3 {
+    grid-area: blankh3;
+}
+
+.interest_data {
+    grid-area: interest_data;
+    display: grid;
+    grid-template-columns: 0.35fr 0.33fr 0.05fr 0.7fr 0.3fr 0.3fr 0.05fr 1.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "blankv1 blank116 blankv2 academic1 blankv3 blank118 blankv4 practical1"
+        "blankv1 academic blankv2 academic2 blankv3 practical blankv4  practical2"
+        "blankv1 blank120 blankv2 academic3 blankv3 blank122 blankv4 practical3"
+        "blankv1 blank123 blankv2 academic4 blankv3 blank125 blankv4 practical4"
+        "blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 blankh1 ";
+}
+
+.hobbies_data {
+    grid-area: hobbies_data;
+    display: grid;
+    grid-template-columns: 0.43fr 0.23fr 0.05fr 0.7fr 0.38fr 0.23fr 0.05fr 1.4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "blankv5 blank126 blankv6 active1 blankv7 blank127 blankv8 passive1"
+        "blankv5 active blankv6 active2 blankv7 passive blankv8  passive2"
+        "blankv5 blank128 blankv6 active3 blankv7 blank129 blankv8 passive3"
+        "blankv5 blank130 blankv6 active4 blankv7 blank131 blankv8 passive4"
+        "blankh2 blankh2 blankh2 blankh2 blankh2 blankh2 blankh2 blankh2";
+}
+
+.blankv1 {
+    grid-area: blankv1;
+}
+
+.blankv2 {
+    grid-area: blankv2;
+}
+
+.blankv3 {
+    grid-area: blankv3;
+}
+
+.blankv4 {
+    grid-area: blankv4;
+}
+
+.blankv5 {
+    grid-area: blankv5;
+}
+
+.blankv6 {
+    grid-area: blankv6;
+}
+
+.blankv7 {
+    grid-area: blankv7;
+}
+
+.blankv8 {
+    grid-area: blankv8;
+}
+
+.blankh1 {
+    grid-area: blankh1;
+}
+
+.blankh2 {
+    grid-area: blankh2;
+}
+
+.references_data {
+    grid-area: references_data;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 0.25fr 4.3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "blankv9 salehname salehimg1 salehemail1"
+        "blankv9 blank132 salehimg2 salehemail2"
+        "blankv9 blank133 salehimg3 salehlink"
+        "blankv9 blankh4 blankh4 blankh4"
+        "blankv9 abbas abbasimg1 abbasemail"
+        "blankv9 blank134 abbasimg2 abbaslink"
+        "blankv9 blankh5 blankh5 blankh5"
+        "blankv9 thiscv thiscvimg thiscvlink"
+        "blankv9 blankh6 blankh6 blankh6";
+}
+.blankv9{
+    grid-area: blankv9;
+}
+.blankh4{
+    grid-area: blankh4;
+}
+.blankh5{
+    grid-area: blankh5;
+}
+.blankh6{
+    grid-area: blankh6;
+}
+
+
+
+@media print {
+    a {
+        /* pointer-events: none; */
+        color: #000;
+        text-decoration: none;
+    }
+
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+}
+
+.pagetitle {
+    grid-area: "pagetitle";
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr 6fr 1fr 1fr 6fr;
+    grid-template-areas: "profilepic""blank1""cvname""blank2""logo""contact";
+}
+
+
+.profilepic {
+    grid-area: "profilepic";
+    /* background-color: orange; */
+}
+
+.blank1 {
+    grid-area: "blank1";
+    margin-top: .5rem;
+    /* background-color: rosybrown; */
+}
+
+.cvname {
+    grid-area: "cvname";
+    /* background-color: seagreen; */
+}
+
+.blank2 {
+    grid-area: "blank2";
+    /* background-color: rosybrown; */
+}
+
+.logo {
+    display: grid;
+    grid-area: "logo";
+    /* background-color: violet; */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "email_logo"
+        "linkedin_logo"
+        "phone_logo"
+        "github_logo";
+}
+
+.contact {
+    grid-area: "contact";
+    display: grid;
+    /* background-color: turquoise; */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "email"
+        "linkedin"
+        "phone"
+        "github";
+
+}
+
+.pagebody {
+    grid-area: "pagebody";
+    display: grid;
+    /* background-color: white; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr .5fr 1fr 5fr .5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr 1fr 3fr 0.5fr;
+    grid-template-areas: "blank3"
+        "personal_title"
+        "personal_data"
+        "blank10"
+        "education_title"
+        "education_data"
+        "blank28"
+        "teaching_title"
+        "teaching_data"
+        "blank40"
+        "working_title"
+        "working_data"
+        "blank52"
+        "languages_title"
+        "languages_data"
+        "blank65"
+
+}
+
+
+.blank3 {
+    grid-area: "blank3";
+    /* background-color: greenyellow; */
+}
+
+.personal_title {
+    grid-area: "personal_title";
+    /* background-color: hotpink; */
+
+}
+
+.personal_data {
+    grid-area: "personal_data";
+    display: grid;
+    /* background-color: lightblue; */
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-columns: 1fr 1.6fr 2.2fr 1.4fr 1.5fr 2.2fr;
+    grid-template-areas: "blank4""dob""dob_v""blank5""ms""ms_v"
+        "blank7""pob""pob_v""blank8""ws""ws_v"
+        "b""address""address_v""bb""pc""pc_v";
+}
+
+.blank10 {
+    grid-area: "blank10";
+    /* background-color: tomato; */
+}
+
+.education_title {
+    grid-area: "education_title";
+    /* background-color: violet; */
+}
+
+.education_data {
+    grid-area: "education_data";
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-areas: "y1521sec"
+        "blank19"
+        "y1315sec";
+}
+
+.y1521sec {
+    grid-area: "y1521sec";
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "blank11""y1521""blank12""y1521d""y1521d_v"
+        "blank13""blank14""blank15""y1521w""y1521w_v"
+        "blank16""blank17""blank18""y1521gpa""y1521gpa_v";
+}
+
+.blank19 {
+    grid-area: "blank19";
+    /* background-color: darkorange; */
+}
+
+.y1315sec {
+    grid-area: "y1315sec";
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "blank20""y1315""blank21""y1315d""y1315d_v"
+        "blank22""blank23""blank24""y1315w""y1315w_v"
+        "blank25""blank26""blank27""y1315gpa""y1315gpa_v";
+}
+
+
+.blank4 {
+    grid-area: "blank4";
+    /* background-color: mediumorchid; */
+}
+
+.dob {
+    grid-area: "dob";
+}
+
+.dob_v {
+    grid-area: "dob_v";
+}
+
+.blank5 {
+    grid-area: "blank5";
+    /* background-color: mediumorchid; */
+}
+
+.ms {
+    grid-area: "ms";
+}
+
+.ms_v {
+    grid-area: "ms_v";
+}
+
+.blank6 {
+    grid-area: "blank6";
+    /* background-color: mediumorchid; */
+}
+
+
+
+.blank7 {
+    grid-area: "blank7";
+    /* background-color: mediumpurple; */
+}
+
+.pob {
+    grid-area: "pob";
+}
+
+.pob_v {
+    grid-area: "pob_v";
+}
+
+.blank8 {
+    grid-area: "blank8";
+    /* background-color: mediumpurple; */
+}
+
+.ws {
+    grid-area: "ws";
+}
+
+.ws_v {
+    grid-area: "ws_v";
+}
+
+.blank9 {
+    grid-area: "blank9";
+    /* background-color: mediumpurple; */
+}
+
+.teaching_title {
+    grid-area: "teaching_title";
+    /* background-color: grey; */
+}
+
+.teaching_data {
+    grid-area: "teaching";
+    display: grid;
+    /* background-color: midnightblue; */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+    grid-template-areas: "blank29""y1920""blank30""y1929p""y1920p_v"
+        "blank31""blank32""blank33""y1920w""y1920w_v"
+        "blank34""blank35""blank36""y1920i""y1920i_v"
+        "blank37""blank38""blank39""y1929c""y1929c_v";
+}
+
+
+.working_title {
+    grid-area: "working_title";
+    /* background-color: mediumblue; */
+}
+
+.working_data {
+    grid-area: "working_data";
+    /* background-color: cyan; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+    grid-template-areas: "blank41""y1617""blank42""y1617p""y1617p_v"
+        "blank43""blank44""blank45""y1617w""y1617w_v"
+        "blank46""blank47""blank48""y1617cto""y1617cto_v"
+        "blank49""blank50""blank51""y1617c""y1617c_v";
+}
+
+
+.languages_title {
+    grid-area: "languages_title";
+    /* background-color: darkorange; */
+}
+
+.languages_data {
+    grid-area: "languages_data";
+    /* background-color: purple; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1.5fr 0.5fr 1.3fr 8fr;
+    grid-template-areas: "blank53""blank54""blank55""en""en_v"
+        "blank56""blank57""blank58""de""de_v"
+        "blank59""blank60""blank61""de2""de2_v"
+        "blank62""blank63""blank64""fa""fa_v";
+}
+
+/* .restofpage {
+    grid-area: "restofpage";
+    background-color: red;
+} */
+
+/* .footer {            
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.page1, .page2{
+    background-color: #EFE9F4;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    box-shadow: rgba(9, 11, 11, 0.56) 0px 22px 70px 4px;
+}
+
+body {
+    background-color: #252D2D;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.profilepic img {
+    border: 4px solid #252D2D;
+}
